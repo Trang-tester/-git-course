@@ -1,0 +1,18 @@
+1.Câu lệnh để cài đặt email và name:
+git config --global user.name "Tên của bạn"
+git config --global user.email "email@example.com"
+
+2.Setup lại Git name về: PW - <tên của bạn>
+git config --global user.name "PW - Trang"
+
+3.Commit lại thay đổi
+git init
+git add 
+git commit -m"init project"
+
+4.Tạo một GitHub repository tên git-course
+Vào GitHub → New Repository → Đặt tên: 
+>Chọn SSH hoặc HTTPS để copy link
+>git remote add origin <ssh_link>
+>git branch -M main
+>git push -u origin main
