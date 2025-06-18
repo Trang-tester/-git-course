@@ -1,7 +1,8 @@
 Bài 1.
 a, git init : Khởi tạo một repository Git (repo) mới trong thư mục hiện tại.
 b, git add <file_name>: Thêm một file cụ thể vào staging area – tức là chuẩn bị để commit.
-c, git add .: Thêm tất cả các thay đổi hiện có (file mới, đã sửa, hoặc đã xóa) vào staging area.
+c,  snapshot lại 1 bản ghi chứa thông tin của các file được add (bao gồm cả nội dung và trạng thái của các file tại thời điểm add), working dir vẫn giữ nguyên không thay đổi
+- git commit: đẩy snapshot từ staging lên repository
 d, git commit -m "message":
 Chức năng: Ghi lại các thay đổi đã được add vào staging area, với một thông điệp mô tả ngắn.
 
