@@ -17,3 +17,13 @@ f. Chạy lệnh: git add . : vùng working directory: blank, staging: file2 và
 g. Chạy lệnh: git restore --staged file2: vùng working directory: file2, staging: file3, repo: file1
 h. Chạy lệnh: git commit -m”add all files”: vùng working directory: file2, staging: blank, repo: file1, file3
 i. Chạy lệnh: git reset HEAD~1: vùng working directory: file2, staging: file1, file3, repo: blank
+
+Bài 3
+a. Chạy lệnh git init: Các vùng working directory, staging, repo : blank
+b. Tạo file file1.txt, file2.txt, oops/file3.txt.: working directory: file1.txt, file2.txt, oops/file3.txt, staging, repo : blank
+c. Thêm file .gitignore, thêm vào 2 dòng:
+i. file1.txt
+ii. oops/
+=> working directory: file1.txt, file2.txt, oops/file3.txt, staging, repo : blank
+d. Chạy lệnh: git add . => working directory: file1.txt, file2.txt (trạng thái ẩn- git sẽ không theo dõi), staging:  oops/file3.txt, repo : blank
+e. Chạy lệnh: git commit -m"init project": working directory: file1.txt, file2.txt (trạng thái ẩn- git sẽ không theo dõi), staging: blank, repo :  oops/file3.txt
