@@ -1,0 +1,19 @@
+Bài 1
+a. ``git commit --amend`` : là cách thủ công dùng để thay đổi message đã commit và phải dùng thêm các thao tác:
+- Gõ i -> vào chế độ insert
+- Gõ esc để thoát insert
+- Gõ “:wq” -> write and quit
+b. ``git commit --amend -m”message”``: Dùng để thay đổi message đã commit
+c. ``git restore --staged <file>,``: Dùng để đưa các file/folder về vùng working directory
+d. ``git reset HEAD~1.``: Dùng để đưa file/folder về ver trước đó 1 ver từ vùng repo về staging
+
+Bài 2
+a. Tạo 3 file: file1, file2, file3 => Trên máy local
+b. Chạy lệnh: git init:  Vùng working directory ( cả 3 file)
+c. Chạy lệnh: git commit -m”init project”: vãn ở vùng working directory ( cả 3 file)
+d. Chạy lệnh: git add file1: duy nhất file 1 ở vùng staging còn file 2 và 3 ở vùng working directory
+e. Chạy lệnh: git commit -m”add file”: duy nhất file 1 ở vùng repo, vùng staging không có file, còn file 2 và 3 ở vùng working directory
+f. Chạy lệnh: git add . : vùng working directory: blank, staging: file2 và 3, repo: file1
+g. Chạy lệnh: git restore --staged file2: vùng working directory: file2, staging: file3, repo: file1
+h. Chạy lệnh: git commit -m”add all files”: vùng working directory: file2, staging: blank, repo: file1, file3
+i. Chạy lệnh: git reset HEAD~1: vùng working directory: file2, staging: file1, file3, repo: blank
